@@ -1,0 +1,33 @@
+.task {
+	background-color: #eee;
+	color: #333;
+	padding: 4px 8px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+
+	.title {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		flex-shrink: 1;
+		min-width: 0;
+	}
+
+	.assignee {
+		display: flex;
+		flex-direction: row;
+		gap: 4px
+	}
+
+	.description {
+		p {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			flex-shrink: 1;
+			min-width: 0;
+		}
+	}
+}

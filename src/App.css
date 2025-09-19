@@ -1,0 +1,21 @@
+button {
+	cursor: pointer;
+	transition: all 0.2s ease;
+	border: 0;
+
+	&:hover {
+		filter: brightness(1.1);
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+
+.dragging {
+	opacity: 0.33 !important;
+}
+
+.dragged-over {
+	background-color: lightsteelblue !important;
+}
